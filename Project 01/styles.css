@@ -1,0 +1,145 @@
+body {
+    background-image: url("assets/Images/tile.jpg");
+    margin: 10px;
+    padding: 10px;
+}
+
+#title {
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.detailsDiv {
+    background-image: url("assets/Images/formbg.jpg");
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#reset {
+    position: relative;
+    margin-left: 250px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    height: 236px;
+    width: 200px;
+    background-image: url("assets/Images/notebg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 15px;
+    animation: fadeIn 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+p {
+    margin-bottom: -2px;
+}
+
+.task-area {
+    height: 215px;
+    width: 160px;
+}
+
+.task-inside-details {
+    font-family: 'URW Chancery L', cursive;
+    padding: 3px;
+    overflow-y: scroll;
+    height: 150px;
+    width: 155px;
+    position: relative;
+    bottom: 1px;
+    border-bottom: 1px solid black;
+    font-size: small;
+}
+.task-inside-date-time {
+    height: 50px; 
+    width: 100px;
+    position: relative;
+    bottom: 5px;
+}
+
+.close-icon {
+    display: inline-block;
+    background-color: transparent;
+    border: transparent;
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    text-align: center;
+    position: relative;
+    top: -1px;
+    left: 137px;
+    visibility: hidden;
+}
+
+.close-icon:hover {
+    background-color: rgb(248, 79, 79);
+}
+
+.task-area:hover > button {
+    visibility: visible;
+    opacity: 1.0;
+}
+
+#gitHubImg {
+    height: 50px;
+    width: 50px;
+}
+
+.copyright {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    /* color: rgb(170, 224, 224); */
+    color: azure;
+    background-color: black;
+    border-radius: 15px;
+}
