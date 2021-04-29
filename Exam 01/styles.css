@@ -1,0 +1,15 @@
+body {
+    padding: 15px;
+    margin: 15px;
+}
+
+span {
+    border: solid black 1px;
+    /* display: inline-block; */
+    width: 200px;
+    height: 40px;
+}
+
+canvas {
+    border: 1px solid black;
+}

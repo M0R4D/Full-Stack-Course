@@ -1,0 +1,29 @@
+Student: Abu Alkeaan Morad
+-------------
+
+Pros: 
+- The user interface is clear and easy to use.
+- The CSS code is separated into an external file.
+- The JavaScript code is separated into an external file.
+- There is a proper naming convention for variables and functions.
+- Bootstrap is used.
+- There is aesthetics in the code in terms of spaces, enter-s, indentations and so on.. Excellent.
+- The sphere of the ball is calculated correctly.
+- The circles are displayed on the canvas properly.
+- There is validation on an empty string.
+- There is validation for the introduction of non-numerical value.
+- There is a validation on the entry of a negative number.
+- There is validation for entering a radius greater than the size of the canvas.
+- The canvas can be cleaned.
+- No console errors.
+
+cons:
+- There are significant names for variables and functions in most of the project but not everywhere. Example of an exception: A variable named sp.
+- No need to use Bootstrap scripts if only Bootstrap CSS is used.
+- Do not leave code in comments. Use it or delete it but do not leave a comment.
+- The error messages are the same for each error that may occur and therefore not clear enough about what is wrong with the inserted radius. Also, the user does not know what the size of the canvas is, so it is not most clear to him what to put in if there is a request not to exceed the canvas limits.
+- It would have been better to display only 2 digits after the decimal point or a maximum of 4 as in the characterization.
+- Quite complex to perform a number of trainer operators - one inside the other. It was right to divide this into a number of different conditions.
+
+
+Score: 95

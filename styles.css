@@ -21,6 +21,10 @@ div {
     text-align: center;
 }
 
-#projectsSection {
+.projectsSection , .examsSection {
     background-color: beige;
+}
+
+.examsSection {
+    background-color: lightblue;
 }
