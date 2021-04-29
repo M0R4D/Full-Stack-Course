@@ -1,26 +1,15 @@
-html {
-    background-color: aliceblue;
-}
-
 body {
-    margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 
-#pageTitle {
-    background-color: antiquewhite;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: cursive;
-    font-size: larger;
-    text-align: center;
+span {
+    border: solid black 1px;
+    /* display: inline-block; */
+    width: 200px;
+    height: 40px;
 }
 
-div {
-    text-align: center;
-}
-
-#projectsSection {
-    background-color: beige;
+canvas {
+    border: 1px solid black;
 }

@@ -4,32 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects redirection page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <link rel="icon" href="./assets/images/forward.png">
 </head>
 
 <body>
-    <div id="pageTitle">
-        <h1>M0R4D projects and assignments - FullStack course by John Bryce</h1>
-    </div>
-    <br>
-    <div id="info">
-        <p>here you can find my course projects and assignments </p>
-        <p>click on the proper button to see my work </p>
-    </div>
-    <br>
-    <div id="projectsSection">
+
+    <div class="row">
+        <div class="container col">
+            <h3>Input Radius value and get the volume of the sphere</h3>
+            <form class="col-6" id="myForm">
+                <label for="radius">Radius: </label>
+                <input id="radius" class="form-control inline" required>
+                <br>
+
+                <label>Sphere: </label>
+                <span id="span" class="form-control"></span>
+                <br> <br>
+
+                <button type="button" onclick="calc()" class="btn btn-primary">calculate</button>
+            </form>
+        </div>
+
         <br>
-        <button onclick="location.href='./Project 01/index.html'" title="a simple site to manage your tasks on a classic board view">Project 1 - Tasks Board</button>
-        <button title="Site Under Construction">Project 2</button>
-        <br> <br>
+
+        <div class="container col">
+            <h1>Drawing On Canvas!</h1>
+            <canvas id="myCanvas" width="500" height="500"></canvas>
+            <br>
+            <button class="btn btn-secondary" onclick="clearCanvas()">Clear</button>
+        </div>
     </div>
-    <div>
-        <p class="note">Note: the projects are not related one to other so you will see different styles and themes and even project specifications</p>
-        <p class="note">Note: this page is just a gate to the other projects</p>
-    </div>
+
+
 </body>
 
 </html>
