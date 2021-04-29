@@ -1,15 +1,26 @@
+html {
+    background-color: aliceblue;
+}
+
 body {
-    padding: 15px;
-    margin: 15px;
+    margin: 10px;
+    padding: 10px;
 }
 
-span {
-    border: solid black 1px;
-    /* display: inline-block; */
-    width: 200px;
-    height: 40px;
+#pageTitle {
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
 }
 
-canvas {
-    border: 1px solid black;
+div {
+    text-align: center;
+}
+
+#projectsSection {
+    background-color: beige;
 }
