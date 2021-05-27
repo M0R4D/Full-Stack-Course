@@ -4,7 +4,7 @@
 function getAllCountries(id) {
     let url = $("#searchInput").val();
     if (id === "all") {
-        url = "http://restcountries.eu/rest/v2/all";
+        url = "https://restcountries.eu/rest/v2/all";
     }
     else {
         if (url === "" | url === undefined) {
@@ -12,7 +12,7 @@ function getAllCountries(id) {
             alert("No No, your search should not be empty\nif you want to see the whole list there is a button exactly for this");
             return;
         }
-        url = `http://restcountries.eu/rest/v2/name/${$("#searchInput").val()}`;
+        url = `https://restcountries.eu/rest/v2/name/${$("#searchInput").val()}`;
     }
     ajaxTime(url);
 }
