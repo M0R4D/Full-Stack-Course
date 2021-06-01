@@ -1,14 +1,15 @@
 # Full-Stack-Course
 my Full Stack Course by John Bryce Assignments and Projects
 here (https://m0r4d.github.io/Full-Stack-Course/) you can see my work as an actual website, not just a pure code of HTML,CSS,JS and others.. 
-you can dind here these projects and exams:
-<h2>Projects</h2>
+
+<p>you can find here these projects and exams:</p>
+<h3>Projects</h3>
 <ul>
-  <li>Project 01 - Tasks Board</li>
-  <li>Project 02 - Crypto</li>
+  <li><a href="https://m0r4d.github.io/Full-Stack-Course/Project%2001/index.html">Project 01</a> - Tasks Board</li>
+  <li><a href="">Project 02</a> - Crypto</li>
 </ul>
 <h3>Exams</h3>
 <ul>
-  <li>Exam 01 - draw on a canvas</li>
-  <li>Exam 02 - Countries List with jQuery, AJAX</li>
+  <li><a href="https://m0r4d.github.io/Full-Stack-Course/Exam%2001/index.html">Exam 01</a> - draw on a canvas</li>
+  <li><a href="https://m0r4d.github.io/Full-Stack-Course/Exam%2002%20-%20Countries%20List%20with%20jQuery,%20AJAX%20and%20APIs/index.html">Exam 02</a> - Countries List with jQuery, AJAX</li>
 </ul>
