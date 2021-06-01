@@ -1,13 +1,15 @@
 /// <reference path="jquery-3.6.0.js" />
 "use strict";
 
-function getAllCountries(id) {
+function getCountries(id) {
+    displayLoader();
     let url = $("#searchInput").val();
     if (id === "all") {
         url = "https://restcountries.eu/rest/v2/all";
     }
     else {
         if (url === "" | url === undefined) {
+            hideLoader();
             console.log(url);
             alert("No No, your search should not be empty\nif you want to see the whole list there is a button exactly for this");
             return;
@@ -15,13 +17,14 @@ function getAllCountries(id) {
         url = `https://restcountries.eu/rest/v2/name/${$("#searchInput").val()}`;
     }
     ajaxTime(url);
+    hideLoader();
 }
 
 function ajaxTime(url) {
     $.ajax({
         url : url,
         success: countries => displayCountries(countries),
-        error: err => alert(err.status)
+        error: err => errorMessage(err.status)
     });
 }
 
@@ -33,15 +36,17 @@ function displayCountries(countries) {
         countriesList += `
             <tr>
                 <td>${country.name}</td>
-                <td>${country.topLevelDomain}</td>
                 <td>${country.capital}</td>
-                <td>${formatCurrencies(country.currencies)}</td>
+                <td>${country.population}</td>
+                <td>${country.area}</td>
+                <td>${country.topLevelDomain}</td>
                 <td><img class="flag" src="${country.flag}" alt=""></td>
+                <td>${formatCurrencies(country.currencies)}</td>
                 <td>${country.borders}</td>
-                <td>${country.region}</td>
-            </tr>
-            `;
-        }
+                <td>${country.region},${country.subregion}</td>
+                </tr>
+                `;
+            }
     $("tbody").append(countriesList);
 }
 
@@ -52,4 +57,20 @@ function formatCurrencies(currencies) {
         formattedCurrencies += `(${currency.symbol})${currency.code} `;
     }
     return formattedCurrencies;
+}
+
+
+function errorMessage(status) {
+    if (status === 404) {
+        alert(`Invalid Search, try to:
+        - Check your spill
+        - Search with another words `);
+    }
+}
+
+function displayLoader() {
+    $(".loader").fadeIn("fast");
+}
+function hideLoader() {
+    $(".loader").fadeOut("fast");
 }
