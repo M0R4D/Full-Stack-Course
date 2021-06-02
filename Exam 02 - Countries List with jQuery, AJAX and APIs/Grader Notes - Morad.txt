@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Student: Abu Alkeaan Morad
 -------------
 
@@ -31,38 +30,4 @@ cons:
 - If the user enters a search text that does not return any results - message 404 is displayed instead of displaying a message indicating that no results were found. User does not know what 404 is.
 
 
-=======
-Student: Abu Alkeaan Morad
--------------
-
-Pros: 
-- The user interface looks good.
-- Great use of Bootstrap.
-- There is a good division into different Source-Code files.
-- The image files are in a dedicated folder.
-- The CSS code is separated into an external file.
-- The JavaScript code is separated into an external file.
-- There are significant names for variables and functions.
-- There is a proper naming convention for variables and functions.
-- There is an aesthetic in the code in terms of profits, enter-s, indentations and so on.. Excellent.
-- Great use of jQeury.
-- There is a definition of "use strict" properly.
-- There is good use of AJAX.
-- There is good JSON handling returned from the server.
-- All countries are displayed correctly.
-- Searching for a country works well.
-- There is a view of the currency list of each country.
-- There is a presentation of the borders of each country.
-- There is a good display of the flag.
-- There is a mandatory field validation on the search text.
-- There is one function that allows you to display information for both countries and countries by search results. Excellent.
-- There is a separation of the AJAX code and the display code - excellent.
-
-cons:
-- JavaScript code must be in IIFE or Document Ready.
-- There are null views in different places on the page. It was right to prevent this.
-- If the user enters a search text that does not return any results - message 404 is displayed instead of displaying a message indicating that no results were found. User does not know what 404 is.
-
-
->>>>>>> dbf0532a5c9f5f8bc3a38ab102a90e9b525c6e48
 Score: 100 (bonus for beautiful UI and full implementation of the characterization)
