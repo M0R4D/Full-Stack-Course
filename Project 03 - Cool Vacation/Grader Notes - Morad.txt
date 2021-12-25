@@ -1,0 +1,66 @@
+﻿Student: Abu Alkeaan Morad
+------------
+
+Pros: 
+- The database is built correctly according to the characterization.
+- The password is properly encrypted in the database.
+- The server side is divided into layers properly.
+- DAL, BLL and Controllers are used.
+- The SQL queries are properly constructed.
+- Routes are used correctly.
+- There is a correct use of Methods to perform the various operations on the server side (GET / POST / PUT / DELETE).
+- The server is RESTful Service correctly.
+- There is a SPA site in React.
+- There is a division into Components.
+- The user interface looks very good and is convenient to use.
+- Anonymous users are blocked from accessing pages that require Login.
+- Refresh does not throw the user away from the site and remembers that he is logged in.
+- Registration is possible.
+- Login can be performed.
+- Logout can be performed.
+- There is protection against registration with a busy username.
+- There is server side validation.
+- There is validation on the customer side.
+- You can view the vacation page.
+- You can add Follow for a vacation or delete Follow from a vacation.
+- There is an indication of whether a vacation is in Follow or Unfollow mode.
+- The vacations are sorted according to the Follow properly.
+- The admin can add a vacation.
+- The admin can update a vacation.
+- The admin can delete a vacation.
+- Great use of Socket.io, users can immediately see changes made by the admin. Excellent.
+- There is a possibility of uploading an image to the site.
+- In a vacation update, most of the current vacation details for the purpose of updating are displayed. Excellent.
+- There is support for Defualt Route.
+- There is support for Page 404.
+- Great use of Redux.
+- The site is built as a full SPA.
+- There are significant names for variables, functions, classes and the like.
+- There is a proper naming convention.
+- The code itself is aesthetic in terms of spaces, Enter, parentheses, indentation and the like.
+- There is documentation that allows a better understanding of the code.
+
+
+Cons:
+- When exporting to the database, the V mark is missing next to the option Add CREATE DATABASE. It is worth looking again at how we learned to do this.
+- There are unused variables (listed in gray). It was right to get rid of them.
+- There are empty Source Code files. It was right to get rid of them.
+- Do not leave a code in the comments. Use it or delete it but do not leave a comment.
+- Lack of validation in some places on the customer side. For example, if the admin adds a vacation with a Destination of a number (for example 123) - a validation error is returned from the server when no such validation is performed on the client side at all.
+- Some of the validation errors displayed by Notyf are completely empty. That is, a red message is displayed by Notyf without any content. For example in an attempt to log in with incorrect login information.
+- It is not possible to update an image for a vacation while updating by admin.
+- Missing display of the number of Follows made for each vacation.
+- You can enter a date that has already expired. It was right to prevent this.
+- You can enter an end date that is before the start date. It was right to prevent this.
+- There are errors in the English language (for example the word Fooetr). It is possible to install in Visual Studio Code a plugin called Code Spell Checker that shows all these errors and correct any incorrect word in terms of English.
+- It was not possible to follow up on vacation due to a crash that I had to find and fix. The crash occurred because of an incorrect SQL statement. The sentence was: "INSERT INTO followers VALUES (DEFAULT,?,?)" When the correct sentence is: "INSERT INTO followers VALUES (?,?)". Was it a last-minute change that hadn’t really been tested? If not - how exactly did following a vacation follow at all work in this project?
+- As soon as such a crash occurs - the user is thrown to the Login page. If there is any error, the user should not be thrown anywhere.
+- Immediately after registration the user sees the Follows of the vacations that were on the same computer for the previous user. It was correct to clear Redux immediately upon logout.
+- While editing, the dates of the vacation are not displayed and the user has to enter them again even if he does not want to edit them at all.
+- Immediately after the vacation is taken by the admin - the image is not displayed at all for the clients of the vacation and they need to refresh to see the image.
+
+
+Very good project in terms of architecture, contains a full Full Stack system, contains a REST API that reveals information from MySQL on the server side, contains a SPA site in React, looks very good in terms of UI, contains aesthetic code, performs the characterization mostly very well.
+
+
+Score: 85

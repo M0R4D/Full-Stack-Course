@@ -1,0 +1,41 @@
+.Menu {
+    flex-grow: 0.6;
+    height: inherit;
+}
+
+.Menu > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    /* background-color: #dadada; */
+}
+
+.Menu > nav > div {
+    height: inherit;
+}
+
+.Menu > nav a {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0e2431;
+    padding: 6px 2px;
+    transition: all 0.3s ease;
+}
+
+.Menu > nav a:hover {
+    color: #4070f4;
+}
+
+.Menu .active {
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    /* border: 1px solid #4070f4; */
+    box-shadow: 1px 1px 2px 2px #4070f4;
+}
+

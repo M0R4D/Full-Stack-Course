@@ -1,0 +1,21 @@
+.Footer {
+	background-color: gainsboro;
+    text-align: center;
+    min-height: 40px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.Footer div {
+    padding: 5px;
+}
+
+.Footer a:visited {
+    color: blue;
+}
+
+.Footer svg {
+    position: relative;
+    bottom: -5px !important;
+}

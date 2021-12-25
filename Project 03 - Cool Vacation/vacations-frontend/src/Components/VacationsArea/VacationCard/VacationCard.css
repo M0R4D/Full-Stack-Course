@@ -1,0 +1,131 @@
+.VacationCard {
+    display: inline-block;
+	width: 200px;
+    height: 400px;
+    border: 2px solid red;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.VacationCard .CardHeader {
+    width: 196px;
+    height: 200px;
+}
+
+.VacationCard img {
+    width: 196px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    /* border-radius: 20%; */
+}
+
+.VacationCard .CardHeader h3 {
+    position: relative;
+    top: -200px;
+    color: red;
+    z-index: 2;
+    font-size: 20px;
+    background-color: rgba(74, 212, 244, 0.25);
+}
+
+.VacationCard .CardBody {
+    height: 40%;
+    /* height: 140px; */
+    padding: 10px;
+    margin: 3px 0;
+}
+
+
+.VacationCard .CardBody .Description{
+    text-align: start;
+    height: 70%;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.Description::-webkit-scrollbar {
+    width: 5px;
+}
+
+.VacationCard .CardBody .Dates{
+    text-align: start;
+}
+
+.VacationCard .CardFooter {
+    height: 10%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.VacationCard .CardFooter > div {
+    padding: 10px;
+}
+
+.VacationCard .CardFooter > div button,
+.VacationCard .CardFooter > div a {
+    color: inherit;
+}
+
+.VacationCard .CardFooter > div button:hover,
+.VacationCard .CardFooter > div a:hover {
+    color: #4070f4 !important;
+}
+
+.VacationCard .CardFooter > div > button {
+    background: none !important;
+    color: inherit;
+    border: none;
+    font: inherit !important;
+    cursor: pointer;
+    outline: none!important;
+}
+
+/* .VacationCard .CardFooter > div > button[title="unfollow"] {
+    color: red;
+} */
+
+.CustomUI {
+    background-color: #4070f4;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    min-height: 40vh;
+    min-width: 40vw;
+}
+
+.CustomUI > h1, 
+.CustomUI > p {
+    margin: 15px;
+    padding: 10px;
+}
+
+.CustomUI > p {
+    font-size: larger;
+}
+
+.CustomUI .ConfirmButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80px;
+}
+
+.CustomUI .ConfirmButtons button {
+    border-radius: 10px;
+    min-height: 50%;
+    max-height: 70%;
+    min-width: 45%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.CustomUI .ConfirmButtons button.DeleteConfirmButton {
+    background-color: red;
+}

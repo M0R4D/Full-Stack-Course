@@ -1,0 +1,56 @@
+.Layout > header {
+	position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0,0,0,0.1),
+                inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+                inset 10px 10px 10px rgba(0,0,0,0.1);
+    z-index: 3;
+}
+
+main {
+    min-height: 60vh;
+    margin-top: 140px;
+    /* background-color: gray; */
+    max-width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > .Routing > div {
+	background-color: #ffffff;
+    border-radius: 20px;
+    min-height: 70vh;
+}
+
+
+main > .Routing > div > h1, 
+main > .Routing > div > h2 {
+    padding: 10px;
+    margin: 25px;
+    color: red;
+    color: #4070f4;
+}
+
+
+@media (max-width: 386px) {
+    main {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 387px) and (max-width: 796px) {
+    main {
+        margin-top: 180px;
+    }
+}

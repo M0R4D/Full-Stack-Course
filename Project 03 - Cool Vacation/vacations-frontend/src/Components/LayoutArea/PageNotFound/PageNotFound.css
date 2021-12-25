@@ -1,0 +1,51 @@
+.PageNotFound {
+	padding: 0 30px;
+}
+.PageNotFound * {
+	/* text-align: left !important; */
+}
+
+.PageNotFound h1 {
+	color: red !important;
+}
+
+.PageNotFound h4 {
+    font-size: 25px;
+}
+
+.PageNotFound p {
+	font-size: large;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.PageNotFound ul {
+    padding: 0 25px;
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.PageNotFound > ul > li {
+    padding: 5px 20px;
+}
+
+.PageNotFound > ul > li > a , 
+.PageNotFound > ul > li > a:visited
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+    display: inline-block;
+    border: 1px solid #4070f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 120px;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.PageNotFound > ul > li > a:hover {
+    background-color: #6e93f7;
+    color: #fff;
+}

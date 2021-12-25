@@ -1,0 +1,32 @@
+.Header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #4070f4;
+}
+
+.Header > img {
+	height: 100px;
+    width: 100px;
+}
+
+.Header > h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 410px) {
+    .Header > h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Header > h1 {
+        font-size: 40px;
+    }
+}

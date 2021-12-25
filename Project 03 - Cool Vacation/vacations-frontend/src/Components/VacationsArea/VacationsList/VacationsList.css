@@ -1,0 +1,55 @@
+.VacationsList {
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+}
+
+.VacationsList > .Cards {
+    margin: auto;
+    align-items: center;
+    width: 85vw;
+}
+
+.VacationsList > .Cards h4 {
+    font-size: 20px;
+    color: red;
+    margin: 0 auto 10px auto;
+}
+
+.VacationsList > a {
+    display: block;
+    padding: 10px !important;
+    margin: 5px auto;
+    height: auto;
+    cursor: pointer;
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    /* background-color: #4070f4; */
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+        5px 5px 5px rgba(0,0,0,0.1),
+        inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+        inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+.VacationsList > p > a {
+    color: blue;
+    cursor: pointer;
+    border-bottom: 1px blue dotted;
+}
+
+.VacationsList svg {
+    position: relative;
+    bottom: -5px !important;
+}
+
+@media (max-width: 300px) {
+    .VacationsList > .Cards {
+        width: 100vw;
+    }
+    .VacationsList > a {
+        left: calc(85vw / 2 - 20px);
+    }
+}

@@ -1,0 +1,24 @@
+.Home {
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.Home p {
+    text-align: left;
+    margin: 7px auto
+}
+
+.Home ul {
+    padding-left: 25px;
+}
+
+.Home li {
+    text-align: left;
+}
+
+.Home img {
+    /* height: 30vh; */
+    max-width: 30vw;
+    display: block;
+    padding: 50px;
+}
