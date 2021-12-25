@@ -1,0 +1,142 @@
+
+/* --------------------------------------- Parallax ------------------------------------- */
+.parallax {
+    /* The image used */
+    background-image: url("../assets/Images/cryptos\ wallpaper.jpg");
+    /* Set a specific height */
+    min-height: 600px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* --------------------------------------- Header ------------------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: red;
+    padding: 10px;
+    vertical-align: middle;
+    font-family: cursive;
+    font-size: larger;
+}
+
+#logo {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+
+
+/* --------------------------------------- NavBar ------------------------------------- */
+nav {
+    background-color: #e3f2fd;
+    background-color: white;
+    border-radius: 4px;
+    background-image: linear-gradient(90deg, white,#d5f3fe, #d5f3fe);
+}
+
+/* .tab-content {
+    border: 1px solid black;
+    background-image: linear-gradient(90deg, white,#ebc8d8, #f16666, #ffffff);
+} */
+
+
+/* --------------------------------------- Cards ------------------------------------- */
+#homeLoader {
+    position: relative;
+    left: 50%;
+}
+
+.card {
+    margin: 2px;
+    display: inline-block;
+    width: 18rem;
+    height: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, white,#d5f3fe, #d5f3fe);
+    /* border: 1px solid black; */
+}
+
+.card-title h5 {
+	display: inline-block;
+}
+
+.card-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-btn {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* --------------------------------------- About ------------------------------------- */
+#Morad {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 4px;
+}
+
+
+/* --------------------------------------- Global ------------------------------------- */
+.hide {
+    display: none;
+}
+
+/* --------------------------------------- Footer ------------------------------------- */
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+strong {
+    display: block;
+}
+
+#gitHubImg {
+    height: 50px;
+    width: 50px;
+}
+
+.copyright {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: azure;
+    background-color: black;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding: 5px;
+}
