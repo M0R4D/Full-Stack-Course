@@ -1,0 +1,34 @@
+.Layout {
+	font-size: x-large;
+    margin: 10px;
+    /* display: flex;
+    width: 100%; */
+}
+
+/* .Navigation {
+    position: relative;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%
+} */
+
+a {
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 3px;
+    box-shadow: 0 0 10px gray;
+    background-color: lightblue;
+}
+
+.active {
+    font-weight: bold;
+    color: darkmagenta;
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+.MeetingsList > select {
+	font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.MeetingsList table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.MeetingsList table, .MeetingsList th, .MeetingsList td {
+    border: 2px solid red;
+    padding: 15px;
+}
