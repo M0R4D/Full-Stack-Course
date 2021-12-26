@@ -1,0 +1,36 @@
+<div class="wrapper">
+	<h1>Events List</h1>
+
+	<label>Choose category</label>
+	<select (change)="showEvents($event)">
+		<option disabled selected value="0">Choose category</option>
+		<option *ngFor="let category of categories" [value]="category._id">{{category.name}}</option>
+	</select>
+
+	<div *ngIf="value === 0">There is no events available for this category :(</div>
+	<table *ngIf="value > 0">
+		<thead>
+			<tr>
+				<th>Description</th>
+				<th>Date & Time</th>
+				<th>Address</th>
+				<th>Number of People</th>
+				<th>Delete Event</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let event of events">
+				<td>{{ event.description }}</td>
+				<td>{{ event.eventTime }}</td>
+				<td>{{ event.address }}</td>
+				<td>{{ event.numOfPeople }}</td>
+				<td>
+					<!-- <button class="cancel" (click)="deleteEvent(event._id)">X</button> -->
+					<button class="cancel" (click)="deleteEvent(event._id)"><mat-icon>delete</mat-icon></button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br><br>
+</div>

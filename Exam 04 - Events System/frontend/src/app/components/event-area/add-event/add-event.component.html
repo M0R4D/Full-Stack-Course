@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <div class="form-layout">
+        <h1>Add Event</h1>
+
+        <form (submit)="addEvent()" #formInfo="ngForm">
+
+            <label>Choose Category</label>
+            <select name="categoryId" [(ngModel)]="event.categoryId" required #categoryInfo="ngModel">
+                <option disabled selected value="0">Choose category</option>
+                <option *ngFor="let c of categories" [value]="c._id">{{c.name}}</option>
+            </select>
+            <span *ngIf="categoryInfo.errors?.required && categoryInfo.touched" class="error">
+                Category is required
+            </span>
+            <label>Description:</label><br />
+            <input type="text" name="description" [(ngModel)]="event.description" required minlength="2" maxlength="100"
+                #descriptionInfo="ngModel" />
+            <span *ngIf="descriptionInfo.errors?.required && descriptionInfo.touched">Missing Description</span>
+            <span
+                *ngIf="(descriptionInfo.errors?.minlength || descriptionInfo.errors?.maxlength) && descriptionInfo.touched">
+                Description length should be between 2 and 100
+            </span>
+
+            <label>Address:</label><br />
+            <input type="text" name="address" [(ngModel)]="event.address" required minlength="2" maxlength="100"
+                #addressInfo="ngModel" />
+
+            <span *ngIf="addressInfo.errors?.required && addressInfo.touched">Missing Address</span>
+            <span *ngIf="(addressInfo.errors?.minlength || addressInfo.errors?.maxlength)&& addressInfo.touched">
+                Address length should be between 2 and 100
+            </span>
+
+            <label>number of people:</label><br />
+            <input type="number" name="numOfPeople" [(ngModel)]="event.numOfPeople" required min="5" max="100"
+                #numOfPeopleInfo="ngModel" />
+
+            <span *ngIf="numOfPeopleInfo.errors?.required && numOfPeopleInfo.touched">Missing #People</span>
+            <span *ngIf="(numOfPeopleInfo.errors?.min || numOfPeopleInfo.errors?.max)&& numOfPeopleInfo.touched">
+                #people should be a number between 5 and 100
+            </span>
+
+            <label>Date and time:</label><br />
+            <input type="datetime-local" name="eventTime" [(ngModel)]="event.eventTime" required
+                #eventTimeInfo="ngModel" />
+            <span *ngIf="eventTimeInfo.errors?.required && eventTimeInfo.touched">Missing Time & Date</span>
+
+            <button [disabled]="formInfo.form.invalid">Add Event</button>
+
+        </form>
+    </div>
+</div>
