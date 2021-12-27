@@ -5,7 +5,7 @@ function getCountries(id) {
     displayLoader();
     let url = $("#searchInput").val();
     if (id === "all") {
-        url = "https://restcountries.eu/rest/v2/all";
+        url = "https://restcountries.com/v2/all";
     }
     else {
         if (url === "" | url === undefined) {
@@ -13,7 +13,7 @@ function getCountries(id) {
             alert("No No, your search should not be empty\nif you want to see the whole list there is a button exactly for this");
             return;
         }
-        url = `https://restcountries.eu/rest/v2/name/${$("#searchInput").val()}`;
+        url = `https://restcountries.com/v2/name/${$("#searchInput").val()}`;
     }
     ajaxTime(url);
     hideLoader();
@@ -35,13 +35,13 @@ function displayCountries(countries) {
         countriesList += `
             <tr>
                 <td>${country.name}</td>
-                <td>${country.capital}</td>
+                <td>${country.capital || ""}</td>
                 <td>${country.population}</td>
-                <td>${country.area}</td>
+                <td>${country.area || ""}</td>
                 <td>${country.topLevelDomain}</td>
-                <td><img class="flag" src="${country.flag}" alt=""></td>
+                <td><img class="flag" src="${country.flag || country.flags.svg}" alt=""></td>
                 <td>${formatCurrencies(country.currencies)}</td>
-                <td>${country.borders}</td>
+                <td>${country.borders || "No borders"}</td>
                 <td>${country.region},${country.subregion}</td>
                 </tr>
             `;
@@ -52,6 +52,8 @@ function displayCountries(countries) {
 
 
 function formatCurrencies(currencies) {
+    // console.log(currencies); // currencies is an array
+    if (!currencies) return "No currencies";
     let formattedCurrencies = ``;
     for (const currency of currencies) {
         formattedCurrencies += `(${currency.symbol})${currency.code} `;
